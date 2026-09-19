@@ -51,7 +51,7 @@ Run the following commands in your terminal:
 
 ```bash
 # 1. Navigate to the repository
-cd /Users/pawantiwari/Desktop/DZ0/tiwaripawankumar217-cmd-learn-css-by-styling-a-p-2dfd6423
+cd tiwaripawankumar217-cmd-learn-css-by-styling-a-p-2dfd6423
 
 # 2. Create and switch to a new branch
 git checkout -b feat/phonepe-payment-card

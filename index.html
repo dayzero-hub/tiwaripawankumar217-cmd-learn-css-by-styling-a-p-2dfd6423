@@ -28,8 +28,14 @@
         </svg>
       </div>
 
-      <h2 class="status-title">Transaction Successful</h2>
-      <div class="amount">&#8377;500.00</div>
+      <!-- Amount with inline status badge -->
+      <div class="amount-wrap">
+        <span class="amount">&#8377;500.00</span>
+        <span class="status-badge">Successful</span>
+      </div>
+
+      <!-- Element hidden from flow using display: none -->
+      <p class="refund-note">Refund processed successfully</p>
 
       <p class="recipient-intro">Paid to</p>
       <div class="recipient-name">Sharma General Store</div>
@@ -47,7 +53,7 @@
       <!-- Ticket Notch Divider -->
       <div class="dashed-divider"></div>
 
-      <!-- Transaction Details -->
+      <!-- Transaction Details (Block Rows) -->
       <div class="transaction-details">
         <div class="detail-row">
           <span class="detail-label">UPI Ref ID (UTR)</span>

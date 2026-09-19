@@ -1,0 +1,302 @@
+/* Global Reset & Base Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f1ecf9;
+  text-align: center;
+  padding: 40px 15px;
+  min-height: 100vh;
+}
+
+/* Main Card Container */
+.payment-card {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 380px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(95, 37, 159, 0.15);
+  border: 1px solid #e5daf3;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Card Header */
+.card-header {
+  background-color: #5f259f;
+  padding: 16px 20px;
+  overflow: hidden;
+}
+
+.brand-logo {
+  float: left;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  line-height: 28px;
+}
+
+.pe-circle {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #ffffff;
+  color: #5f259f;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 900;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.badge {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.4px;
+  margin-top: 3px;
+}
+
+/* Card Content Area */
+.card-body {
+  padding: 24px 20px 20px 20px;
+  text-align: center;
+}
+
+/* Success Icon */
+.success-icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 52px;
+  background-color: #1da862;
+  border-radius: 50%;
+  margin: 0 auto 14px auto;
+  box-shadow: 0 4px 14px rgba(29, 168, 98, 0.35);
+  border: 4px solid #e3f7ed;
+  text-align: center;
+}
+
+.success-icon svg {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  stroke: #ffffff;
+  stroke-width: 3.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+}
+
+/* Payment Status & Amount */
+.status-title {
+  font-size: 16px;
+  color: #1da862;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.amount {
+  font-size: 34px;
+  font-weight: 800;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.recipient-intro {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 2px;
+}
+
+.recipient-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2c0e4f;
+}
+
+.recipient-upi {
+  font-size: 13px;
+  color: #7b7b7b;
+  margin-top: 2px;
+  margin-bottom: 18px;
+}
+
+/* Bank Account Card */
+.bank-box {
+  background-color: #faf7fd;
+  border: 1px solid #ebdff8;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.bank-logo {
+  float: left;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #5f259f;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.bank-details {
+  overflow: hidden;
+}
+
+.bank-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #212121;
+  line-height: 1.3;
+}
+
+.bank-account {
+  font-size: 12px;
+  color: #6d6d6d;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+/* Ticket Divider with Side Cutouts */
+.dashed-divider {
+  border: none;
+  border-top: 1.5px dashed #d5c3ea;
+  margin: 18px -20px;
+  position: relative;
+}
+
+.dashed-divider::before,
+.dashed-divider::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 14px;
+  height: 14px;
+  background-color: #f1ecf9;
+  border-radius: 50%;
+}
+
+.dashed-divider::before {
+  left: -7px;
+}
+
+.dashed-divider::after {
+  right: -7px;
+}
+
+/* Transaction Details Table */
+.transaction-details {
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.detail-row {
+  padding: 6px 0;
+  font-size: 12.5px;
+  overflow: hidden;
+}
+
+.detail-label {
+  float: left;
+  color: #6e6e6e;
+}
+
+.detail-value {
+  float: right;
+  color: #1f1f1f;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Action Buttons */
+.button-group {
+  margin-top: 20px;
+  font-size: 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 48%;
+  padding: 11px 0;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #5f259f;
+  border: 1px solid #5f259f;
+  margin-right: 4%;
+}
+
+.btn-outline:hover {
+  background-color: #f6f0fc;
+}
+
+.btn-filled {
+  background-color: #5f259f;
+  color: #ffffff;
+  border: 1px solid #5f259f;
+}
+
+.btn-filled:hover {
+  background-color: #4b1b80;
+}
+
+/* Card Footer */
+.card-footer {
+  background-color: #fbf9fe;
+  border-top: 1px solid #ebdff8;
+  padding: 12px 20px;
+  overflow: hidden;
+  font-size: 11px;
+  color: #695e76;
+}
+
+.upi-badge {
+  float: left;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #5f259f;
+  line-height: 18px;
+}
+
+.upi-badge span {
+  color: #212121;
+}
+
+.security-note {
+  float: right;
+  color: #524760;
+  line-height: 18px;
+}

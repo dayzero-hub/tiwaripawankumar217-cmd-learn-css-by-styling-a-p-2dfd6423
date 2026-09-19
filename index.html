@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhonePe Payment Confirmation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PhonePe Payment Confirmation Card -->
+  <div class="payment-card">
+
+    <!-- Header -->
+    <div class="card-header">
+      <div class="brand-logo">
+        <span class="pe-circle">&#2346;&#2375;</span>PhonePe
+      </div>
+      <span class="badge">UPI Payment</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="card-body">
+      <!-- Success Icon -->
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <h2 class="status-title">Transaction Successful</h2>
+      <div class="amount">&#8377;500.00</div>
+
+      <p class="recipient-intro">Paid to</p>
+      <div class="recipient-name">Sharma General Store</div>
+      <div class="recipient-upi">sharmastore@ybl</div>
+
+      <!-- Debited Bank Info -->
+      <div class="bank-box">
+        <div class="bank-logo">SBI</div>
+        <div class="bank-details">
+          <div class="bank-title">State Bank of India</div>
+          <div class="bank-account">Debited from A/C No. &bull;&bull;&bull;&bull; 4821</div>
+        </div>
+      </div>
+
+      <!-- Ticket Notch Divider -->
+      <div class="dashed-divider"></div>
+
+      <!-- Transaction Details -->
+      <div class="transaction-details">
+        <div class="detail-row">
+          <span class="detail-label">UPI Ref ID (UTR)</span>
+          <span class="detail-value">426391058291</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Transaction ID</span>
+          <span class="detail-value">T260919212716123456</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Date & Time</span>
+          <span class="detail-value">19 Sep 2026, 09:27 PM</span>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="button-group">
+        <button class="btn btn-outline" type="button">Share Receipt</button>
+        <button class="btn btn-filled" type="button">Done</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer">
+      <div class="upi-badge">POWERED BY <span>UPI</span></div>
+      <div class="security-note">&#128274; 100% Safe &amp; Secure</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
